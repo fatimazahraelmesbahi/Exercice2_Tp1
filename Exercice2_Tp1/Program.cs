@@ -12,20 +12,18 @@ namespace Exercice2_Tp1
         {
             int[] arr1 = new int[10];
             int i, n, p = 0, val;
-            Console.Write("\n\nInsert New value in the array :\n");
-            Console.Write("-----------------------------------------\n");
-
-            Console.Write("Input the size of array : ");
+            Console.Write("\n\nAjouter une nouvelle valeur dans le tableau :\n");
+            Console.Write("La taille de tableau : ");
             n = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Input {0} elements in the array in ascending order:\n", n);
+            Console.Write("inserer {0} les elements en discendant:\n", n);
             for (i = 0; i < n; i++)
             {
                 Console.Write("element - {0} : ", i);
                 arr1[i] = Convert.ToInt32(Console.ReadLine());
             }
-            Console.Write("Input the value to be inserted : ");
+            Console.Write("ajouter les elements : ");
              val = Convert.ToInt32(Console.ReadLine());
-            Console.Write("The exist array list is :\n ");
+            Console.Write("la liste est :\n ");
             for (i = 0; i < n; i++)
                 Console.Write("{0} ", arr1[i]);
             for (i = 0; i < n; i++)
@@ -40,7 +38,7 @@ namespace Exercice2_Tp1
             /* insert value at the proper position */
             arr1[p] = val;
 
-            Console.Write("\n\nAfter Insert the list is :\n ");
+            Console.Write("\n\naprés l insertion de la liste :\n ");
             for (i = 0; i <= n; i++)
                 Console.Write("{0} ", arr1[i]);
             Console.Write("\n");
